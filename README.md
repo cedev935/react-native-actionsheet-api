@@ -18,7 +18,7 @@ import ActionSheet from 'ActionSheet';
 ## Step 2:
 
 ```js
-# in your page component's render()
+// in your page component's render()
 
 class MyPage extends React.component {
     // ...
@@ -36,7 +36,7 @@ class MyPage extends React.component {
 
 ## Step 3:
 ```js
-# you can use the api anywhere
+// you can use the api anywhere
 
 ActionSheet.showActionSheetWithOptions({
       options: BUTTONS,
