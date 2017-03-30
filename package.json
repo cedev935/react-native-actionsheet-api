@@ -1,0 +1,26 @@
+{
+  "name": "react-native-actionsheet-api",
+  "version": "1.0.0",
+  "description": "React Native API Andorid polyfill",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zdying/react-native-actionsheet-api.git"
+  },
+  "keywords": [
+    "react-native",
+    "actionsheet",
+    "api",
+    "showActionSheetWithOptions",
+    "action-sheet"
+  ],
+  "author": "zdying <zdying@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zdying/react-native-actionsheet-api/issues"
+  },
+  "homepage": "https://github.com/zdying/react-native-actionsheet-api#readme"
+}
