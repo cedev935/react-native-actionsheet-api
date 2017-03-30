@@ -17,7 +17,7 @@ import ActionSheet from 'ActionSheet';
 
 ## Step 2:
 
-```
+```js
 # in your page component's render()
 
 class MyPage extends React.component {
@@ -35,7 +35,7 @@ class MyPage extends React.component {
 ```
 
 ## Step 3:
-```
+```js
 # you can use the api anywhere
 
 ActionSheet.showActionSheetWithOptions({
@@ -46,7 +46,8 @@ ActionSheet.showActionSheetWithOptions({
     },
     (buttonIndex) => {
       this.setState({ clicked: BUTTONS[buttonIndex] });
-    });
+    }
+);
 ```
 
 # Todo
