@@ -28,7 +28,7 @@ Android效果：
 ## Step 0:
 
 ```
-# install
+npm install react-native-actionsheet-api --save
 ```
 
 ## Step 1:
