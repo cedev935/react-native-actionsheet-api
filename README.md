@@ -66,6 +66,6 @@ ActionSheet.showActionSheetWithOptions({
 ```
 
 # Todo
-[ ] Android样式完善  
-[ ] 添加最终截图  
-[ ] 提供Example  
+[-] Android样式完善  
+[-] 添加最终截图  
+[-] 提供Example  
