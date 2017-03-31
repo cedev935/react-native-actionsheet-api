@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
         paddingTop: 45
     },
     button1: {
-        lineHeight: 36,
+        paddingVertical: 10,
         margin: 10,
         width: Dimensions.get('window').width - 20,
         backgroundColor: '#DB5149',
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
         overflow: 'hidden'
     },
     button2: {
-        lineHeight: 36,
+        paddingVertical: 10,
         margin: 10,
         width: Dimensions.get('window').width - 20,
         backgroundColor: '#29A365',
