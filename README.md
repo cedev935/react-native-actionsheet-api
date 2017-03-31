@@ -14,7 +14,7 @@ IOS有`ActionSheetIOS.showActionSheetWithOptions()`，但是在Android中没有�
 
 # ScreenShot
 
-
+![IOS](screenshot/ios.gif)
 
 
 # Useage
