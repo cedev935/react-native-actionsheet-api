@@ -32,13 +32,14 @@ export default class ActionSheet extends Component {
         let sheets = this.state.sheets;
         let height = this.getHeight(opts);
 
+        this.state.marginBottomValue.setValue(-height);
+
         this.setState({
             sheets: [...sheets, {
                 opts,
                 callback
             }],
-            height,
-            marginBottomValue: new Animated.Value(-height)
+            height
         })
     }
 
@@ -210,7 +211,12 @@ ActionSheet.showActionSheetWithOptions = (
         ActionSheetIOS.showActionSheetWithOptions(opts, callback)
     }else{
         // Android
-        global.__action_sheet.show(opts, callback);
+        //TODO 检测是否创建过实例
+        if(global.__action_sheet instanceof ActionSheet){
+            global.__action_sheet.show(opts, callback);
+        }else{
+            throw 'ActionSheet has not been initialized. To initialize ActionSheet, you should put `<ActionSheet />` to your render().';
+        }
     }
 };
 
