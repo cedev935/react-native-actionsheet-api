@@ -53,9 +53,10 @@ class MyPage extends React.component {
 // 然后在任何地方，都可以使用直接调用这个方法了
 // IOS和Android都可以使用下面的代码
 ActionSheet.showActionSheetWithOptions({
-      options: BUTTONS,
-      cancelButtonIndex: CANCEL_INDEX,
-      destructiveButtonIndex: DESTRUCTIVE_INDEX,
+      title: '请选择您最喜欢的水果',
+      options: ['苹果🍎', '梨🍐', '香蕉🍌', '橘子🍊', '都不喜欢'],
+      cancelButtonIndex: 4,
+      //destructiveButtonIndex: 0,
       tintColor: 'green',
     },
     (buttonIndex) => {
