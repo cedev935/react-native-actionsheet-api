@@ -1,6 +1,6 @@
 # react-native-actionsheet-api
 
-兼容ReactNative中为Android提供IOS的`ActionSheetIOS.showActionSheetWithOptions()`方法。
+提供Android和iOS平台通用的的`showActionSheetWithOptions()`API。统一使用`ActionSheet`。调用时，如果是iOS，调用`ActionSheetIOS.showActionSheetWithOptions()`。
 
 # Why react-native-actionsheet-api
 
@@ -34,7 +34,6 @@ import ActionSheet from 'ActionSheet';
 
 ```js
 // 在页面中渲染
-
 class MyPage extends React.component {
     // ...
 
@@ -52,7 +51,7 @@ class MyPage extends React.component {
 ## Step 3:
 ```js
 // 然后在任何地方，都可以使用直接调用这个方法了
-
+// IOS和Android都可以使用下面的代码
 ActionSheet.showActionSheetWithOptions({
       options: BUTTONS,
       cancelButtonIndex: CANCEL_INDEX,
