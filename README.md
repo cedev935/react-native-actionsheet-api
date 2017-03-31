@@ -1,14 +1,35 @@
 # react-native-actionsheet-api
 
-React Native API Andorid polyfill
+兼容ReactNative中为Android提供IOS的`ActionSheetIOS.showActionSheetWithOptions()`方法。
 
 # Why react-native-actionsheet-api
+
+IOS有`ActionSheetIOS.showActionSheetWithOptions()`，但是在Android中没有这个方法可以使用，
+虽然在Android中使用ActionSheet有人会感觉很别扭，但是有时候确实需要使用（可以把样式改成Android风格的）。
+
+当我们必须**要使用ActionSheet**，并且希望跟IOS一样，**通过API调用来展示，而不是每次通过渲染一个组件**来展示，
+基本上有两种方式：
+
+* Native提供组件，比如[react-native-actionsheet-native](https://www.npmjs.com/package/react-native-actionsheet-native)。
+
+* 渲染一个组件，然后改变其状态，比如：[react-native-actionsheet](https://www.npmjs.com/package/react-native-actionsheet)
+
+第一种方式是我希望要的，但是需要导入Native代码，而我不希望导入，所以开发出这个组件。
+
+**这个组件并不完美，使用之前，需要先在页面中渲染**
 
 # ScreenShot
 
 
 
+
 # Useage
+
+## Step 0:
+
+```
+# install
+```
 
 ## Step 1:
 ```js
@@ -18,7 +39,7 @@ import ActionSheet from 'ActionSheet';
 ## Step 2:
 
 ```js
-// in your page component's render()
+// 在页面中渲染
 
 class MyPage extends React.component {
     // ...
@@ -36,7 +57,7 @@ class MyPage extends React.component {
 
 ## Step 3:
 ```js
-// you can use the api anywhere
+// 然后在任何地方，都可以使用直接调用这个方法了
 
 ActionSheet.showActionSheetWithOptions({
       options: BUTTONS,
@@ -52,3 +73,5 @@ ActionSheet.showActionSheetWithOptions({
 
 # Todo
 [ ] Android样式完善
+[ ] 添加最终截图
+[ ] 提供Example
