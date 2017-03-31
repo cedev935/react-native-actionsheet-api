@@ -14,7 +14,13 @@ IOS有`ActionSheetIOS.showActionSheetWithOptions()`，但是在Android中没有�
 
 # ScreenShot
 
-![IOS](screenshot/ios.gif)
+IOS效果：
+
+![IOS](screenshot/ios.gif) 
+
+Android效果： 
+
+![Android](screenshot/Android.gif)
 
 
 # Useage
@@ -66,6 +72,6 @@ ActionSheet.showActionSheetWithOptions({
 ```
 
 # Todo
-[-] Android样式完善  
-[-] 添加最终截图  
-[-] 提供Example  
+- [ ] Android样式完善  
+- [x] 添加最终截图  
+- [ ] 提供Example  
