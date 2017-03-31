@@ -79,9 +79,11 @@ export default class ActionSheet extends Component {
             {toValue: 0, duration: 210, delay: 10}
         ).start();
 
+        let onMaskPress = this.onMaskPress.bind(this);
+
         return (
-            <Modal visible={true} transparent={true} animationType="fade">
-                <TouchableWithoutFeedback onPress={this.onMaskPress.bind(this)}>
+            <Modal visible={true} transparent={true} animationType="fade" onRequestClose={onMaskPress}>
+                <TouchableWithoutFeedback onPress={onMaskPress}>
                     <Animated.View style={[
                         styles.main, {marginBottom: this.state.marginBottomValue}
                     ]}>
