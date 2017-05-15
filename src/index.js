@@ -145,7 +145,7 @@ export default class ActionSheet extends Component {
 
     renderButtonList(list, style, title){
         return (
-            <View style={[styles.buttonContainer, style]}>
+            <View style={[styles.buttonContainer, style]} key={"button_list_" + Math.random()}>
                 {title ? <View style={styles.header}><Text style={styles.headerText}>{title}</Text></View> : null}
                 {
                     list.map((button, bIndex) => {
@@ -211,7 +211,6 @@ ActionSheet.showActionSheetWithOptions = (
         ActionSheetIOS.showActionSheetWithOptions(opts, callback)
     }else{
         // Android
-        //TODO 检测是否创建过实例
         if(global.__action_sheet instanceof ActionSheet){
             global.__action_sheet.show(opts, callback);
         }else{
