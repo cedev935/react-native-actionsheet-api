@@ -33,7 +33,7 @@ npm install react-native-actionsheet-api --save
 
 ## Step 1:
 ```js
-import ActionSheet from 'ActionSheet';
+import ActionSheet from 'react-native-actionsheet-api';
 ```
 
 ## Step 2:
