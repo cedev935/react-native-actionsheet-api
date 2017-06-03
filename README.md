@@ -10,7 +10,7 @@ IOS有`ActionSheetIOS.showActionSheetWithOptions()`，但是在Android中没有�
 当我们必须**要使用ActionSheet**，并且希望跟IOS一样，**通过API调用来展示，而不是每次通过渲染一个组件**来展示，
 基本上就是提供Native提供组件，比如[react-native-actionsheet-native](https://www.npmjs.com/package/react-native-actionsheet-native)，但是需要导入Native代码，而我不希望导入，所以开发出这个组件。
 
-**这个组件并不完美，使用之前，需要先在页面中渲染**
+> 提示：这个组件并不完美，使用之前，需要先在页面中渲染**一次**(创建一个实例)
 
 # ScreenShot
 
@@ -25,18 +25,20 @@ Android效果：
 
 # Useage
 
-## Step 0:
+## Step 0: 安装
 
 ```
 npm install react-native-actionsheet-api --save
 ```
 
-## Step 1:
+## Step 1: 引入
 ```js
 import ActionSheet from 'react-native-actionsheet-api';
 ```
 
-## Step 2:
+## Step 2: 实例化
+
+一般选择在使用之前实例化`ActionSheet`，但是**只需要实例化一次**。
 
 ```js
 // 在页面中渲染
@@ -46,6 +48,7 @@ class MyPage extends React.component {
     render(){
         return (
             <View>
+                {/* 只需要实例化一次 */}
                 <ActionSheet />
                 {/* ... */}
             </View>
@@ -54,7 +57,7 @@ class MyPage extends React.component {
 }
 ```
 
-## Step 3:
+## Step 3: 调用
 ```js
 // 然后在任何地方，都可以使用直接调用这个方法了
 // IOS和Android都可以使用下面的代码
@@ -70,8 +73,3 @@ ActionSheet.showActionSheetWithOptions({
     }
 );
 ```
-
-# Todo
-- [ ] Android样式完善  
-- [x] 添加最终截图  
-- [x] 提供Example  
