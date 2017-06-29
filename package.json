@@ -1,6 +1,6 @@
 {
   "name": "react-native-actionsheet-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React Native ActionSheet polyfill for Android written by Javascript, no native code is required.",
   "main": "src/index.js",
   "scripts": {
