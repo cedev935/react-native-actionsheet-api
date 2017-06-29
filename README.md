@@ -2,7 +2,7 @@
 
 提供Android和iOS平台通用的的`showActionSheetWithOptions()`API。统一使用`ActionSheet`。调用时，如果是iOS，调用`ActionSheetIOS.showActionSheetWithOptions()`。
 
-# Why react-native-actionsheet-api
+## Why react-native-actionsheet-api
 
 IOS有`ActionSheetIOS.showActionSheetWithOptions()`，但是在Android中没有这个方法可以使用，
 虽然在Android中使用ActionSheet有人会感觉很别扭，但是有时候确实需要使用（可以把样式改成Android风格的）。
@@ -12,7 +12,7 @@ IOS有`ActionSheetIOS.showActionSheetWithOptions()`，但是在Android中没有�
 
 > 提示：这个组件并不完美，使用之前，需要先在页面中渲染**一次**(创建一个实例)
 
-# ScreenShot
+## ScreenShot
 
 IOS效果：
 
@@ -23,20 +23,20 @@ Android效果：
 ![Android](screenshot/Android.gif)
 
 
-# Useage
+## Useage
 
-## Step 0: 安装
+### Step 0: 安装
 
 ```
 npm install react-native-actionsheet-api --save
 ```
 
-## Step 1: 引入
+### Step 1: 引入
 ```js
 import ActionSheet from 'react-native-actionsheet-api';
 ```
 
-## Step 2: 实例化
+### Step 2: 实例化
 
 一般选择在使用之前实例化`ActionSheet`，但是**只需要实例化一次**。
 
@@ -57,7 +57,7 @@ class MyPage extends React.component {
 }
 ```
 
-## Step 3: 调用
+### Step 3: 调用
 ```js
 // 然后在任何地方，都可以使用直接调用这个方法了
 // IOS和Android都可以使用下面的代码
@@ -73,3 +73,7 @@ ActionSheet.showActionSheetWithOptions({
     }
 );
 ```
+
+## License
+
+这个项目采用MIT协议 - 详细信息请查看[LICENSE](https://github.com/qfight/react-native-actionsheet-api/blob/master/LICENSE)。
